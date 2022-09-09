@@ -16,23 +16,34 @@ int main()
 	v1.push_front(72);
 	v1.push_front(73);
 	v1.push_front(74);
-	v.print();
-	v1.print();
 
-
-	v.resize(3);
+	//vector v functionality
+	cout << "Below are the starting " << v.size() << " values of the array v:" << endl;
 	v.print();
-	cout << v.size() << endl;
+
+	cout << "Array of v is being resized to 10:" << endl;
+	v.resize(10);
+	v.print();
+
+	cout << "Array of v is being resized to 6:" << endl;
 	v.resize(6);
 	v.print();
-	cout << v.size() << endl;
 
+	//vector v1 functionality
+	cout << "Below are the starting " << v1.size() << " values of array v1:" << endl;
+	v1.print();
+
+	cout << "Array of v1 is being resized to 5:" << endl;
+	v1.resize(5);
+	v1.print();
+
+	cout << "Array of v1 is being resized to 3 with the value of 23:" << endl;
 	v1.resize(3, 23);
 	v1.print();
-	cout << v1.size() << endl;
-	v1.resize(6, 23);
+
+	cout << "Array of v1 is being resized to 8 with the value of 12:" << endl;
+	v1.resize(8, 12);
 	v1.print();
-	cout << v1.size() << endl;
+
 	return 0;
 }
-
